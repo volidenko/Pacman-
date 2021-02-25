@@ -15,8 +15,10 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.S))
             transform.Translate(Vector3.back*charSpeed*Time.deltaTime);
         if(Input.GetKey(KeyCode.A))
-            transform.Translate(Vector3.down*turnSpeed*Time.deltaTime);
+            //transform.Translate(Vector3.down*turnSpeed*Time.deltaTime);
+            transform.Translate(Vector3.left*turnSpeed*Time.deltaTime);
         if(Input.GetKey(KeyCode.D))
-            transform.Translate(Vector3.up*turnSpeed*Time.deltaTime);
+            //transform.Translate(Vector3.up*turnSpeed*Time.deltaTime);
+            transform.Translate(Vector3.right*turnSpeed*Time.deltaTime);
     }
 }

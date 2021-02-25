@@ -13,8 +13,6 @@ public class MovePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space)){
-            print("Space button pressed");
-        }
+        if (Input.GetKey(KeyCode.Space)){print("Space button pressed"); }
     }
 }
