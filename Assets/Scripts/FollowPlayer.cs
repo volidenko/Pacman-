@@ -6,7 +6,10 @@ public class FollowPlayer : MonoBehaviour
 {
     public GameObject player;
     public float enemySpeed=1f;
-
+    void Start()
+    {
+        player=GameObject.Find("Player");
+    }
     // Update is called once per frame
     void Update()
     {
